@@ -1,0 +1,9 @@
+<!--pages/mine/mine.wxml-->
+<view class="header flex-col h-center v-center">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view class="level fs-16">学徒（等级）</view>
+  <view class="level exp fs-16">0/100</view>
+  <text class="nickname">{{userInfo.nickName}}</text>
+</view>
+
+

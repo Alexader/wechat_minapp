@@ -1,0 +1,7 @@
+<!--pages/mainPage.wxml-->
+<view class="header flex-col h-center v-center">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view class="level fs-16">{{userInfo.nickName}}</view>
+  <view class="level exp fs-16">0/100</view>
+</view>
+
