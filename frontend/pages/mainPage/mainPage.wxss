@@ -37,3 +37,20 @@
 .sm-img{
   margin-right: 10rpx;
 }
+.select_one{
+ color:#4995fa;
+  text-align: center;
+  background-color:rgb(239, 239, 239);
+  width:676rpx;
+  height:100rpx;
+  line-height:100rpx;
+  margin-top: 5px;
+  margin-left: 15px;
+  border-bottom:2rpx solid rgb(255, 255, 255);
+}
+.rotateRight{
+  transform: rotate(180deg);
+}
+.usermotto {
+  margin-top: 50px;
+}

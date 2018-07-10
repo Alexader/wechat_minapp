@@ -4,4 +4,15 @@
   <view class="level fs-16">{{userInfo.nickName}}</view>
   <view class="level exp fs-16">0/100</view>
 </view>
-
+<picker class="select_one"value="{{picker1Value}}" range="{{picker1Range}}" bindchange="normalPickerBindchange">
+  打卡天数：{{picker1Range[picker1Value]}}
+</picker>
+<picker class="select_one" mode="time" value="{{timeValue}}" start="00:00" end="24:00" bindchange="timePickerBindchange">
+ 打卡时间选择: {{timeValue}}
+</picker>
+<picker class="select_one" mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+ 开始日期选择: {{dateValue}}
+</picker>
+<view class="usermotto">
+    <button class="weui-btn" type="primary" bindtap='etdata'> 创建我的打卡 </button>
+</view>
