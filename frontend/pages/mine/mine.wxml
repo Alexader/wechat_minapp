@@ -5,5 +5,21 @@
   <view class="level exp fs-16">0/100</view>
   <text class="nickname">{{userInfo.nickName}}</text>
 </view>
+<progress
+ percent="20"
+ show-info="true"
+ stroke-width="10"
+ active="true"/>
+ <view class="dakadays">
+  <text class="dakadays">已打卡2天！要加油哦</text>
+</view>
+<button class="dk_btn" bindtap="ok">点击打卡！</button>
+<view class="dk_nav">今日打卡战况 </view>
+<view class="dk_result">
+	<view class="dk_result_success"><text>4</text>成功</view>
+	<text class="dk_result_line">|</text>
+	<view class="dk_result_error"><text>0</text>失败</view>
+</view>
+ 
 
 

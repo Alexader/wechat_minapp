@@ -3,6 +3,14 @@ var app = getApp()
 
 Page({
 
+
+  ok:function(){
+    wx.showToast({
+    title: '成功',
+    icon: 'success',
+    duration: 2000
+  })
+  },
   /**
    * 页面的初始数据
    */
@@ -71,4 +79,6 @@ Page({
   onShareAppMessage: function () {
 
   }
+
+ 
 })
