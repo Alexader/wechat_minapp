@@ -212,7 +212,7 @@
   height:300rpx;
   line-height:70rpx;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-bottom:2rpx solid rgb(255, 255, 255);
 }
 .select_two{
@@ -223,7 +223,7 @@
   height:300rpx;
   line-height:70rpx;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-bottom:2rpx solid rgb(255, 255, 255);
 }
 .usermotto1 {
@@ -231,4 +231,12 @@
 }
 .userp {
   text-align: right;
+}
+.usermotto2 {
+  color: #f6f6f6;
+  margin-top: 10px;
+  text-align: center;
+  background-color:rgb(220, 60, 120);
+  width:100%;
+  height:60rpx;
 }

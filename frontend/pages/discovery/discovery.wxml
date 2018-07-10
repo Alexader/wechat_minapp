@@ -59,8 +59,11 @@
         </swiper-item>  
       </block>  
     </swiper> 
+
+  <view class="usermotto2" >
+    <text class="usermotto2"  > 加入小组 ： </text>
+  </view>  
  <view class="container"> 
- 
  <view class="select_one" bindtouch='getTogroup'>
     <text class="usermotto"  bindtouch='getTogroup'> 发起人 ： </text>
     <text class="usermotto1"  bindtouch='getTogroup'>  闪闪发光

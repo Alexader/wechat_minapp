@@ -14,5 +14,5 @@
  开始日期选择: {{dateValue}}
 </picker>
 <view class="usermotto">
-    <button class="weui-btn" type="primary" bindtap='etdata'> 创建我的打卡 </button>
+    <button class="weui-btn" type="primary" bindtap='getTomine'> 创建我的打卡 </button>
 </view>

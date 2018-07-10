@@ -24,13 +24,11 @@ Page({
       dateValue: e.detail.value
     })
   },
-
-  data: {
-    logs: []
-  },
-  onLoad: function () {
-    this.getdata();
-
+  getTomine: function () {
+    wx.switchTab({
+      url: '/pages/mine/mine',
+    })
+    console.log("redirect to mine")
   },
 
   getdata: function () {//定义函数名称
