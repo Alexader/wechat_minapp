@@ -200,7 +200,7 @@ Page({
       { url: 'http://www.23book.com/upload/2017/07/27/18b2ab0cc253ee6f.jpg' },
       { url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531203818898&di=ec459cca510d610500dfd024fe6016a6&imgtype=0&src=http%3A%2F%2Fcdn.k618img.cn%2Fnews.k618.cn%2Froll%2F201709%2FW020170901388076680765.jpg' },
       { url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531203848824&di=83c5b0f332e4f9843fb10709f4985376&imgtype=0&src=http%3A%2F%2Fwww.kentrexs.cn%2Fuploads%2Fallimg%2F161230%2F787-16123010005c10.jpg' },
-      { url: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1405626712,1194876936&fm=27&gp=0.jpg' }
+      { url: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4249216709,2262105062&fm=27&gp=0.jpg' }
     ]
   },
   onLoad: function () {
