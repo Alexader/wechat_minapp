@@ -59,4 +59,36 @@
         </swiper-item>  
       </block>  
     </swiper> 
+ <view class="container"> 
+ 
+ <view class="select_one" bindtouch='getTogroup'>
+    <text class="usermotto"  bindtouch='getTogroup'> 发起人 ： </text>
+    <text class="usermotto1"  bindtouch='getTogroup'>  闪闪发光
+</text>
+    <text class="usermotto"  bindtouch="getTogroup"> 打卡时间 ：</text>
+    <text class="usermotto1"  bindtouch="getTogroup">  07:00
+</text>
+    <text class="usermotto"  bindtouch='getTogroup'> 打卡天数 ：</text>
+    <text class="usermotto1"  bindtouch='getTogroup'>  一周
+</text>
+    <text class="usermotto"  bindtouch='getTogroup'> 开始时间 ：</text>
+    <text class="usermotto1"  bindtouch='getTogroup'>  2018:7:11
+</text>
+</view>
 
+<view class="select_two" bindtouch="getTogroup">
+    <text class="usermotto"  bindtap="getTogroup"> 发起人 ： </text>
+    <text class="usermotto1"  bindtap="getTogroup">  ppgg
+</text>
+    <text class="usermotto"  bindtap="getTogroup"> 打卡时间 ：</text>
+    <text class="usermotto1"  bindtap="getTogroup">  06:30
+</text>
+    <text class="usermotto"  bindtap='getTogroup'> 打卡天数 ：</text>
+    <text class="usermotto1"  bindtap="getTogroup">  3天
+</text>
+    <text class="usermotto"  bindtap="getTogroup"> 开始时间 ：</text>
+    <text class="usermotto1"  bindtap="getTogroup">  2018:7:16
+</text>
+</view>  
+
+</view>
