@@ -1,32 +1,61 @@
-<!--pages/discovery/dicovery.wxml-->
-<!--顶部的分栏信息，显示不同类别的小组，比如说是读书，英语之类的  -->
-<scroll-view class="segments" scroll-x="true">
-  <view wx:for="{{sections}}" class="section {{item.active ? 'active' : ''}}" 
-    data-sid="{{item.section_id}}" bindtap="onSectionClicked">
-    <text>{{item.name}}</text>
-  </view>
-</scroll-view>
 
-<!--显示的是一个栏目下面最热门的几个小组  -->
-<view class="groups">
-  <view wx:for="{{groups}}" class="group" data-aid="{{item.group_id}}" bindtap="onGroupClicked">
-            <view class="left">
-                <view class="name">
-                    {{item.name}}
-                </view>
-                <view class="introduction">
-                    <!--这边可以加简介-->
-                </view>
-                <view class="date">
-                    <text>{{item.date}}</text>
-                </view>
-                <view class="cnt">
-                    <text>人数:{{item.group_member}}</text>
-                </view>
-            </view>
-            <view class="right">
-                <image src="{{item.cover1}}"/>
-            </view>
-            <view style="clear:both"></view>
-        </view>
+
+
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+         <text wx:if="{{wxSearchData.value.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>返回</text>
+     </view>
 </view>
+
+<view class="wxSearch" style="'block';height:{{wxSearchData.view.seachHeight}}px;top:{{wxSearchData.view.barHeight}}px;">
+
+  <view class="wxSearchInner">
+    <!-- 搜索提示部分 -->
+    <view class="wxSearchMindKey">
+      <view class="wxSearchMindKeyList">
+        <block wx:for="{{wxSearchData.tipKeys}}">
+          <view class="wxSearchMindKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+
+    <view wx:if="{{wxSearchData.his[0]}}" class="wxSearchHistory" style="display:{{wxSearchData.value.length>0 ? 'none':'block'}}">
+      <view class="wxSearchHistoryItem">
+        <text class="wxSearchHistoryItemTitle">搜索记录</text>
+        <!--text class="wxSearchHistoryItemDel" bindtap="wxSearchDeleteAll">删除</text-->
+        <icon type="clear" bindtap="wxSearchDeleteAll" size="18" />
+      </view>
+      <view class="wxSearchKeyList">
+        <block wx:for="{{wxSearchData.his}}">
+          <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+
+    <view class="wxSearchKey" style="display:{{wxSearchData.value.length>0 ? 'none':'block'}}">
+      <text wx:if="{{wxSearchData.hotKeys[0]}}" class="wxSearchTitle">搜索热点</text>
+      <view class="wxSearchKeyList">
+        <block wx:for="{{wxSearchData.hotKeys}}">
+          <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+ <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper> 
